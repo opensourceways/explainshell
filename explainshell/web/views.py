@@ -18,9 +18,9 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/statement')
-def statement():
-    return render_template('statement.html')
+@app.route('/legal')
+def legal():
+    return render_template('legal.html')
 
 @app.route('/explain')
 def explain():
