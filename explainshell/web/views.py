@@ -18,6 +18,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/statement')
+def statement():
+    return render_template('statement.html')
+
 @app.route('/explain')
 def explain():
     if 'cmd' not in request.args or not request.args['cmd'].strip():
