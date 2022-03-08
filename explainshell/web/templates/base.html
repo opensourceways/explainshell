@@ -53,12 +53,12 @@
                 </div>
             </div>
             {% block content %}{% endblock %}
+
+	    <div style="text-align: center; margin-top: 200px">
+                <a href="https://explainshell.openeuler.sh/legal">Terms of Use</a>
+	    </div>
         </div>
-        {% block footer %}
-        </div style="display: inline-block; text-align: center">
-            <a href="https://explainshell.openeuler.sh/statement">statement</a>
-        </div>
-	{% endblock %}
+        {% block footer %}{% endblock %}
 {%- if config.DEBUG %}
         <script src="/static/js/jquery.js"></script>
         <script src="/static/js/underscore.js"></script>
